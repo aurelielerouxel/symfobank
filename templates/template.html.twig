@@ -1,0 +1,32 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+    <header class="jumbotron jumbotron-fluid bg-dark text-white mb-0">
+        <section class="container">
+            <h1 class="display-4">SymfoBank</h1>
+            <p class="lead">Parce que le temps c'est de l'argent, laissez nous vous en faire gagner.</p>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="nav mt-0 bg-danger">
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Acceuil</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-white" href="#">Déconnexion</a>
+            </li>
+
+        </ul>
+    </nav>
+
+    <main class="container my-5">
+    {% block main %}{% endblock %}
+    </main>
+
+    <footer class="jumbotron jumbotron-fluid bg-dark text-white">
+        <section class="container">
+            <p class="lead">Tous droits réservés okalme.fr</p>
+        </section>
+    </footer>
+{% endblock %}
